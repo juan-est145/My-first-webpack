@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import myName from './myName';
 
 
 function component() {
@@ -6,7 +7,8 @@ function component() {
   
 	// Lodash, now imported by this script
 	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
+
+	element.textContent = myName("Juan");
 	return element;
   }
   
