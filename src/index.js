@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import myName from './myName';
+import './style.css';
 
 
 function component() {
@@ -9,6 +10,7 @@ function component() {
 	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
 	element.textContent = myName("Juan");
+	element.classList.add("hello");
 	return element;
   }
   
