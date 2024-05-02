@@ -1,5 +1,15 @@
+@font-face 
+{
+	font-family: 'Roboto';
+	src: url('./Roboto-Regular.ttf') format('truetype'),
+    	url('./Roboto-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
 .hello
 {
 	color: red;
+	font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 	background: url('./icon.png');
 }
