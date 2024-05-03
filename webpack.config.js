@@ -12,6 +12,10 @@ module.exports = {
     clean: true,
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+    watchFiles: ['src/**/*.html'],
+  },
   mode: 'development',
   module: {
     rules: [
@@ -25,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/inline',
+        type: 'asset/resource',
       },
       {
         test: /\.(csv|tsv)$/i,
