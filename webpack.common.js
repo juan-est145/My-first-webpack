@@ -4,19 +4,14 @@ const yaml = require('yamljs');
 const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
+module.exports = 
+{
+	entry: './src/index.js',
+  	output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-    watchFiles: ['src/**/*.html'],
-  },
-  mode: 'development',
   module: {
     rules: [
       {
@@ -69,4 +64,4 @@ module.exports = {
       template: './src/index.html',
     })
   ],
-};
+}
