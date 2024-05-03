@@ -59,9 +59,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'First HTML plugin use',
       inject: 'head',
       scriptLoading: 'defer',
+      template: './src/index.html',
     })
   ],
 };
