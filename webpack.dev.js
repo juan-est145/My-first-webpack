@@ -8,4 +8,4 @@ module.exports = merge(common, {
 		static: './dist',
 		watchFiles: ['src/**/*.html'],
 	},
-})
+});
