@@ -2,6 +2,8 @@ const path = require('path');
 const toml = require('toml');
 const yaml = require('yamljs');
 const json5 = require('json5');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { head } = require('lodash');
 
 module.exports = {
   entry: './src/index.js',
@@ -55,4 +57,11 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'First HTML plugin use',
+      inject: 'head',
+      scriptLoading: 'defer',
+    })
+  ],
 };
