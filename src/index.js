@@ -17,6 +17,7 @@ console.log(yaml.owner.name); // output `Tom Preston-Werner`
 console.log(json.title); // output `JSON5 Example`
 console.log(json.owner.name); // output `Tom Preston-Werner`
 
+console.log("Este es el error");
 
 function component() 
 {
